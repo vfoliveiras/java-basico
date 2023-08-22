@@ -35,16 +35,19 @@ public class TiposVariaveis {
                     result = num1 / num2;
                 } else {
                     System.out.println("Não é possível dividir por zero.");
-                    return;
+                    extracted();
                 }
                 break;
             default:
                 System.out.println("Operação inválida.");
-                return;
+                extracted();
         }
 
         System.out.println("Resultado: " + result);
 
         scanner.close();
+    }
+
+    private static void extracted() {
     }
 }
